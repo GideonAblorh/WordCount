@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <center>
+    <h1 class="center">Word Length Checker!</h1>
+    <form>
+      <h3 class="center">Type a word in the box bellow:</h3>
+      <input type="text" class="input" id="input">
+      <p><span id="span">00</span></p>
+    </form>
+  </center>
+
+<script type="text/javascript">
+  function getLength(event){
+  var inputVal = document.getElementById("input").value;
+  var inputValue = inputVal.replace(/\s/g, "");
+  if (inputValue.length === 0) {document.getElementById("span").innerHTML = "00";
+} else {
+document.getElementById("span").innerHTML = inputValue.length;
+}
+}
+document.getElementById("input").addEventListener('input', getLength);
+</script>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+ 
+
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/jqery-3.4.1.min.js"></script>
+
+</body>
+</html>

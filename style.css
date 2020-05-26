@@ -1,0 +1,17 @@
+body{
+	background: #009688;
+}
+
+h1{
+	font-family: sans-serif;
+	color: #08086d;
+}
+
+h3{
+	font-family: sans-serif;
+	color: #202502;
+}
+.input{
+	height: 15px;
+	padding: 10px;
+}
